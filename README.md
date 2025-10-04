@@ -11,10 +11,12 @@ A Python-based hand gesture detection and control system using MediaPipe and Ope
   - Individual finger counting (1-5 fingers)
 - Customizable gesture-to-command mapping
 - Easy integration with other applications
+- Visual feedback with hand landmarks
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.9+
+>>>>>>> 75ac977546de8a460cbb2a12bb696979e26f00f2
 - OpenCV
 - MediaPipe
 - NumPy
@@ -74,3 +76,16 @@ MIT License - see LICENSE file for details.
 
 - MediaPipe team for their hand tracking solution
 - OpenCV community
+python gesture_control.py
+```
+
+- Show your hand to the camera
+- Try different gestures (open palm, closed fist, or show different numbers of fingers)
+- Press 'q' to quit
+
+## Future Enhancements
+- Advanced gesture recognition
+- Custom gesture mapping
+- Application control integration
+- Multiple hand tracking improvements
+>>>>>>> 75ac977546de8a460cbb2a12bb696979e26f00f2
