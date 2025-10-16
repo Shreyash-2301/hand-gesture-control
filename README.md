@@ -6,12 +6,21 @@ A Python-based hand gesture detection and control system using MediaPipe and Ope
 
 - Real-time hand detection and tracking
 - Multiple gesture recognition:
-  - Open palm
-  - Closed fist
-  - Individual finger counting (1-5 fingers)
+  - Static gestures:
+    - Open palm
+    - Closed fist
+    - Individual finger counting (1-5 fingers)
+  - Dynamic gestures:
+    - Swipe Left/Right
+    - Swipe Up/Down
+  - Custom gesture recording and recognition
+- Advanced visualization:
+  - Hand landmark tracking
+  - Movement trajectories with fade effect
+  - Gesture history display
+- Multi-hand support
 - Customizable gesture-to-command mapping
 - Easy integration with other applications
-- Visual feedback with hand landmarks
 
 ## Requirements
 
