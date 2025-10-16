@@ -52,21 +52,59 @@ A Python-based hand gesture detection and control system using MediaPipe and Ope
 
 ## Installation
 
+### Backend Setup
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/Shreyash-2301/hand-gesture-control.git
    cd hand-gesture-control
    ```
 
-2. Install dependencies:
+2. Create and activate a Python virtual environment:
    ```bash
-   pip install -r requirements.txt
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install backend dependencies:
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
+
+### Frontend Setup
+
+1. Install Node.js dependencies:
+   ```bash
+   cd frontend
+   npm install
+   ```
+
+2. Create a `.env` file in the frontend directory:
+   ```
+   VITE_BACKEND_URL=http://localhost:5000
    ```
 
 ## Usage
 
-Run the feature demo script to test all capabilities:
+### Starting the Application
 
+1. Start the backend server:
+   ```bash
+   cd backend
+   uvicorn main:app --reload
+   ```
+
+2. Start the frontend development server:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:5173`
+
+### Command Line Demo
+
+For a quick command-line demo without the web interface:
 ```bash
 python examples/feature_demo.py
 ```
